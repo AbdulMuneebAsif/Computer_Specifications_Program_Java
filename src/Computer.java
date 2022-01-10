@@ -53,23 +53,18 @@ public class Computer {
                 System.out.println(" with Monitor size " + screen.getSize() + " inches ");
             }
             System.out.print("CPU(s)   : ");
-        }
-        else
-        {
-            System.out.println("\nComputer cannot have more than 4 processors.");
-        }
 
-        if (processors.length <= 4) {
             for (Processor processorElement : processors) {            //For each element named processorElement from array processors
                 System.out.print(processorElement.speed + ", ");
             }
             System.out.println(" MHz  ");
 
             System.out.println("RAM      : " + ram.size + " Gb");
-        }
-        else
-        {
+        } else {
+            System.out.println("\nComputer cannot have more than 4 processors.");
+
             System.out.println("ERROR !!!");
         }
+
     }
 }
