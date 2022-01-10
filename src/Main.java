@@ -17,9 +17,11 @@ public class Main {
 
     private static void displayComputerSpecs(Computer[] computers)
     {
-        for (int i = 0; i < computers.length; i++) {
-            System.out.println(" \n\t\t***************** " + computers[i].mboard.getCompName() + " ******************** ");
-            computers[i].display();
+        for (Computer computer : computers) {
+            System.out.println(" \n\t\t***************** " + computer.mboard.getCompName() + " ******************** ");
+
+            computer.display();
+
         }
     }
 
